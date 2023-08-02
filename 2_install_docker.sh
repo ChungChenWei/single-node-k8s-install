@@ -27,4 +27,4 @@ sudo systemctl daemon-reload
 sudo systemctl enable cri-docker.service
 sudo systemctl enable --now cri-docker.socket
 cd ..
-rm cri-dockerd
+rm -rf cri-dockerd
