@@ -4,8 +4,8 @@ echo "[A-1] Install Helm"
 sudo yum install -y git
 curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
 chmod 700 get_helm.sh
-mkdir -p /usr/local/bin
-echo "export PATH=$PATH:/usr/local/bin" >> ~/.bashrc && source ~/.bashrc
+# mkdir -p /usr/local/bin
+# echo "export PATH=$PATH:/usr/local/bin" >> ~/.bashrc && source ~/.bashrc
 ./get_helm.sh
 rm ./get_helm.sh
 
