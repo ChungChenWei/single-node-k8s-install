@@ -29,7 +29,7 @@
 
   ```sh
   wget https://raw.githubusercontent.com/ChungChenWei/single-node-k8s-install/main/get_scripts.sh
-  chmod 755 get_scripts.sh
+  chmod +x get_scripts.sh
   ./get_scripts.sh
   ```
 
@@ -44,5 +44,5 @@
 
   ```sh
   cd install-scripts
-  sudo ./main.sh
+  ./install.sh
   ```

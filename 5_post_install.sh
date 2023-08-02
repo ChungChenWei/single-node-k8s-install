@@ -2,7 +2,7 @@
 
 echo "[5-1] Export admin.conf"
 # root
-# echo "export KUBECONFIG=/etc/kubernetes/admin.conf" >> ~/.bashrc
+# echo "export KUBECONFIG=/etc/kubernetes/admin.conf" >> ~/.bashrc && source ~/.bashrc
 # normal
 mkdir -p $HOME/.kube
 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config

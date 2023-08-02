@@ -10,5 +10,5 @@ echo "export PATH=$PATH:/usr/local/bin" >> ~/.bashrc && source ~/.bashrc
 rm ./get_helm.sh
 
 echo "[A-2] Install yq"
-wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O /usr/local/bin/yq &&\
-    chmod +x /usr/local/bin/yq
+sudo wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O /usr/local/bin/yq &&\
+    sudo chmod +x /usr/local/bin/yq
