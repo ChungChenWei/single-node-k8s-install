@@ -8,3 +8,7 @@ sudo ./4_start_control_node.sh
 ./6_install_CNI.sh
 ./A_install_tools.sh
 ./7_install_ingress_nginx.sh
+
+kubectl get nodes
+kubectl get pods -A
+# nc 127.0.0.1 6443

@@ -46,3 +46,5 @@
   cd install-scripts
   ./install.sh
   ```
+
+  > Note that due to `sudo` operation, it may ask you to enter password
