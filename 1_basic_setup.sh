@@ -27,15 +27,18 @@ EOF
 sysctl --system
 
 echo "[1-5] Setup firewall config"
-firewall-cmd --add-service=http --permanent
-firewall-cmd --add-service=https --permanent
-firewall-cmd --add-port 6443/tcp --permanent
-firewall-cmd --add-port 2379-2380/tcp --permanent
-firewall-cmd --add-port 10250/tcp --permanent
-firewall-cmd --add-port 10257/tcp --permanent
-firewall-cmd --add-port 10259/tcp --permanent
-firewall-cmd --reload
-sudo systemctl restart firewalld
+# firewall-cmd --add-service=http --permanent
+# firewall-cmd --add-service=https --permanent
+# firewall-cmd --add-port 6443/tcp --permanent
+# firewall-cmd --add-port 2379-2380/tcp --permanent
+# firewall-cmd --add-port 10250/tcp --permanent
+# firewall-cmd --add-port 10257/tcp --permanent
+# firewall-cmd --add-port 10259/tcp --permanent
+# firewall-cmd --reload
+# sudo systemctl restart firewalld
+
 # firewall-cmd --list-all
 # for test
 # nc 127.0.0.1 6443
+
+sudo systemctl disable --now firewalld.service
